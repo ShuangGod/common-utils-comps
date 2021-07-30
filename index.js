@@ -3,12 +3,11 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-07-29 15:19:09
- * @LastEditTime: 2021-07-30 15:17:05
+ * @LastEditTime: 2021-07-30 16:05:56
  * @LastEditors: Shuangshuang Song
 */
 
 import BackToTop from './src/components/BackToTop/index.js';
-import Pagination from './src/components/Pagination/index.js';
 import {
   handleClipboard, parseTime, formatTime, getQueryObject, byteLength, cleanArray, json2param, param2Json, html2Text, objectMerge,
   toggleClass, getTime, debounce, deepClone, uniqueArr, createUniqueString, hasClass, addClass, removeClass, deleteOneOfArray,
@@ -26,7 +25,7 @@ import Audiojs from './src/class/audio';
 import Print from './src/class/print';
 
 const components = [
-  BackToTop, Pagination,
+  BackToTop,
 ];
 
 const install = function (Vue) {
