@@ -21,6 +21,10 @@
   "bugs": {
     "url": "https://github.com/mabidenengma/common-utils-comps/issues"
   },
+  "files": [
+    "index.js",
+    "src"
+  ],
   "dependencies": {
     "axios": "^0.21.1",
     "clipboard": "^2.0.4",
