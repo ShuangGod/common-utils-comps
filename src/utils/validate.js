@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-04-14 13:18:38
- * @LastEditTime: 2021-07-29 16:48:43
+ * @LastEditTime: 2021-07-30 15:03:03
  * @LastEditors: Shuangshuang Song
  */
 /**
@@ -12,15 +12,6 @@
  */
 export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path);
-}
-
-/**
- * @param {string} str
- * @returns {Boolean}
- */
-export function validUsername(str) {
-  const valid_map = ['admin', 'editor'];
-  return valid_map.indexOf(str.trim()) >= 0;
 }
 
 /**

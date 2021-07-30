@@ -3,12 +3,11 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-07-12 11:11:45
- * @LastEditTime: 2021-07-29 16:59:40
+ * @LastEditTime: 2021-07-30 14:44:34
  * @LastEditors: Shuangshuang Song
  */
 
 import axios from 'axios';
-import { Message } from 'element-ui';
 
 /**
  * @description: 获取音频 arraybuffer 格式流
@@ -32,7 +31,7 @@ class Audiojs {
       this._init();
     }
     if (!this.audioContext) {
-      return Message.error('该浏览器不支持webAudioApi相关接口');
+      return console.error('该浏览器不支持webAudioApi相关接口');
     }
     // 有播放中的音频 先暂停
     if (this.playStatus === 'play') {

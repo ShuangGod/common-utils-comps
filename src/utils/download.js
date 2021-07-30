@@ -3,13 +3,12 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-03-30 11:18:29
- * @LastEditTime: 2021-07-29 16:58:46
+ * @LastEditTime: 2021-07-30 14:42:39
  * @LastEditors: Shuangshuang Song
  */
 import axios from 'axios';
 import JSZip from 'jszip';
 import FileSaver from 'file-saver';
-import { Message } from 'element-ui';
 
 /**
  * @name getFile
@@ -52,11 +51,7 @@ export function showError(res, item) {
     }
   }
 
-  Message.error({
-    showClose: true,
-    message,
-    type: 'error',
-  });
+  console.error(message);
 }
 
 /**

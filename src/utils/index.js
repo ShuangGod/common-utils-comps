@@ -3,11 +3,34 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-07-29 16:03:11
- * @LastEditTime: 2021-07-29 17:05:32
+ * @LastEditTime: 2021-07-30 14:58:20
  * @LastEditors: Shuangshuang Song
  */
 
 import QRCode from 'qrcodejs2';
+import Clipboard from 'clipboard';
+
+/**
+ * @name handleClipboard
+ * @description: 复制
+ * @param {*} text
+ * @param {*} event
+ * @returns {*}
+ */
+export function handleClipboard(text, event) {
+  const clipboard = new Clipboard(event.target, {
+    text: () => text,
+  });
+  clipboard.on('success', () => {
+    console.log('copy success');
+    clipboard.destroy();
+  });
+  clipboard.on('error', () => {
+    console.log('copy fail');
+    clipboard.destroy();
+  });
+  clipboard.onClick(event);
+}
 
 /**
  * 时间转字符串
@@ -151,9 +174,9 @@ export function cleanArray(actual) {
 
 /**
  * @param {Object} json
- * @returns {Array}
+ * @returns {String}
  */
-export function param(json) {
+export function json2param(json) {
   if (!json) return '';
   return cleanArray(
     Object.keys(json).map((key) => {
@@ -167,22 +190,22 @@ export function param(json) {
  * @param {string} url
  * @returns {Object}
  */
-export function param2Obj(url) {
+export function param2Json(url) {
   const search = decodeURIComponent(url.split('?')[1]).replace(/\+/g, ' ');
   if (!search) {
     return {};
   }
-  const obj = {};
+  const json = {};
   const searchArr = search.split('&');
   searchArr.forEach((v) => {
     const index = v.indexOf('=');
     if (index !== -1) {
       const name = v.substring(0, index);
       const val = v.substring(index + 1, v.length);
-      obj[name] = val;
+      json[name] = val;
     }
   });
-  return obj;
+  return json;
 }
 
 /**
