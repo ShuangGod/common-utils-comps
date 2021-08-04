@@ -24,7 +24,8 @@
   "main": "lib/common.lib.js",
   "scripts": {
     "build": "webpack --config ./build/webpack.config.js --mode=production",
-    "build:dev": "webpack --config ./build/webpack.config.js --mode=development"
+    "build:dev": "webpack --config ./build/webpack.config.js --mode=development",
+    "pub": "npm run build && npm publish"
   },
   "dependencies": {
     "axios": "^0.21.1",
