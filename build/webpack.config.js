@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-02 11:16:12
- * @LastEditTime: 2021-08-04 14:40:10
+ * @LastEditTime: 2021-08-04 15:44:33
  * @LastEditors: Shuangshuang Song
  */
 const path = require('path');
@@ -14,7 +14,7 @@ module.exports = {
   entry: ['./src/index.js'], // 入口文件
   output: { // 输出文件路径设置
     path: path.resolve(__dirname, '../bin'),
-    filename: 'common.bundle.js',
+    filename: 'index.js',
   },
   // 插件配置
   plugins: [
