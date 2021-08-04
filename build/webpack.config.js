@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-02 11:16:12
- * @LastEditTime: 2021-08-04 17:00:20
+ * @LastEditTime: 2021-08-04 17:25:04
  * @LastEditors: Shuangshuang Song
  */
 const path = require('path');
@@ -17,9 +17,7 @@ module.exports = {
   output: { // 输出文件路径设置
     path: path.resolve(__dirname, '../lib'),
     filename: 'common.lib.js',
-    chunkFilename: '[id].js',
     library: {
-      name: 'Common',
       type: 'commonjs2',
       export: 'default',
     },
