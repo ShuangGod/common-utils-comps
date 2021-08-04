@@ -1,6 +1,6 @@
 {
   "name": "common-utils-comps",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "常用的公共类，方法，组件，指令等等~",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "url": "https://github.com/mabidenengma/common-utils-comps/issues"
   },
   "files": [
-    "bin"
+    "bin/common.bundle.js"
   ],
   "main": "bin/common.bundle.js",
   "scripts": {
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.9",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
