@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-02 11:16:12
- * @LastEditTime: 2021-08-04 17:25:04
+ * @LastEditTime: 2021-08-04 17:49:39
  * @LastEditors: Shuangshuang Song
  */
 const path = require('path');
@@ -30,14 +30,10 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        include: process.cwd(),
         loader: 'babel-loader',
       },
       {
         test: /\.(less|s[ac]ss)$/,
-        exclude: /node_modules/,
-        include: process.cwd(),
         use: [
           // [css-loader](/loaders/css-loader)
           {
@@ -53,8 +49,6 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        include: process.cwd(),
-        exclude: /node_modules/,
         use: ['vue-loader'],
       },
     ],
