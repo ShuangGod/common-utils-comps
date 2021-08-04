@@ -96,7 +96,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .back-to-ceiling {
   position: fixed;
   display: inline-block;

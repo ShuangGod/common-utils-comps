@@ -3,26 +3,26 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-07-29 15:19:09
- * @LastEditTime: 2021-07-30 16:05:56
+ * @LastEditTime: 2021-08-04 14:19:16
  * @LastEditors: Shuangshuang Song
 */
 
-import BackToTop from './src/components/BackToTop/index.js';
+import BackToTop from './components/BackToTop/index.js';
 import {
   handleClipboard, parseTime, formatTime, getQueryObject, byteLength, cleanArray, json2param, param2Json, html2Text, objectMerge,
   toggleClass, getTime, debounce, deepClone, uniqueArr, createUniqueString, hasClass, addClass, removeClass, deleteOneOfArray,
   dataURLtoFile, getBase64Image, createQRcode, isString, isArray, common, isEmpty, isMobileUserAgent, getPageHeight, getPageWidth,
   isWeixin, isAndroid,
-} from './src/utils';
-import { getToken, setToken, removeToken } from './src/utils/auth';
-import { getFile, handleBatchDownload } from './src/utils/download';
-import { createPoster, saveAsFile } from './src/utils/poster';
-import scrollTo from './src/utils/scroll-to';
+} from './utils';
+import { getToken, setToken, removeToken } from './utils/auth';
+import { getFile, handleBatchDownload } from './utils/download';
+import { createPoster, saveAsFile } from './utils/poster';
+import scrollTo from './utils/scroll-to';
 import {
   isExternal, validURL, validLowerCase, validUpperCase, validAlphabets, validEmail,
-} from './src/utils/validate';
-import Audiojs from './src/class/audio';
-import Print from './src/class/print';
+} from './utils/validate';
+import Audiojs from './class/audio';
+import Print from './class/print';
 
 const components = [
   BackToTop,
