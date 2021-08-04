@@ -19,9 +19,9 @@
     "url": "https://github.com/mabidenengma/common-utils-comps/issues"
   },
   "files": [
-    "bin/common.bundle.js"
+    "bin"
   ],
-  "main": "bin/common.bundle.js",
+  "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --config ./build/webpack.config.js --mode=production",
