@@ -1,6 +1,6 @@
 {
   "name": "common-utils-comps",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "常用的公共类，方法，组件，指令等等~",
   "repository": {
     "type": "git",
@@ -24,8 +24,7 @@
   "main": "lib/common.lib.js",
   "scripts": {
     "build": "webpack --config ./build/webpack.config.js --mode=production",
-    "build:dev": "webpack --config ./build/webpack.config.js --mode=development",
-    "pub": "npm run build && npm publish"
+    "build:dev": "webpack --config ./build/webpack.config.js --mode=development"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -66,8 +65,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-dev-server": "^3.11.2"
   },
   "husky": {
     "hooks": {
