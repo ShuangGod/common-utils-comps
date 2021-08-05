@@ -3,34 +3,11 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-07-29 16:03:11
- * @LastEditTime: 2021-07-30 14:58:20
+ * @LastEditTime: 2021-08-05 15:13:03
  * @LastEditors: Shuangshuang Song
  */
 
 import QRCode from 'qrcodejs2';
-import Clipboard from 'clipboard';
-
-/**
- * @name handleClipboard
- * @description: 复制
- * @param {*} text
- * @param {*} event
- * @returns {*}
- */
-export function handleClipboard(text, event) {
-  const clipboard = new Clipboard(event.target, {
-    text: () => text,
-  });
-  clipboard.on('success', () => {
-    console.log('copy success');
-    clipboard.destroy();
-  });
-  clipboard.on('error', () => {
-    console.log('copy fail');
-    clipboard.destroy();
-  });
-  clipboard.onClick(event);
-}
 
 /**
  * 时间转字符串

@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-02 11:16:12
- * @LastEditTime: 2021-08-05 14:10:28
+ * @LastEditTime: 2021-08-05 15:14:28
  * @LastEditors: Shuangshuang Song
  */
 const path = require('path');
@@ -18,7 +18,7 @@ module.exports = {
     path: path.resolve(__dirname, '../lib'),
     filename: 'common.lib.js',
     library: {
-      type: 'umd',
+      type: 'commonjs2',
       export: 'default',
       umdNamedDefine: true,
     },
@@ -27,11 +27,17 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
   ],
+  performance: {
+    hints: false,
+  },
+  optimization: {
+    minimize: false,
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/, // 排除文件
+        // exclude: /node_modules/, // 排除文件
         loader: 'babel-loader',
       },
       {
@@ -55,8 +61,6 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: ['node_modules'],
-    extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': path.resolve(__dirname, '../src'),
     },
