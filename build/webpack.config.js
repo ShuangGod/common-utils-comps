@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-02 11:16:12
- * @LastEditTime: 2021-08-05 11:03:44
+ * @LastEditTime: 2021-08-05 13:17:05
  * @LastEditors: Shuangshuang Song
  */
 const path = require('path');
@@ -29,21 +29,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jsx?|babel|es6)$/,
+        test: /\.js$/,
+        exclude: /node_modules/, // 排除文件
         loader: 'babel-loader',
       },
       {
-        test: /\.(less|s[ac]ss)$/,
+        test: /\.(css|less|s[ac]ss)$/,
         use: [
-          // [css-loader](/loaders/css-loader)
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
           { loader: 'less-loader' },
-          // [sass-loader](/loaders/sass-loader)
           { loader: 'sass-loader' },
         ],
       },
