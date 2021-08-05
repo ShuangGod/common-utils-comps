@@ -14,7 +14,7 @@ import axios from 'axios';
  * @param {*} url 绝对地址
  * @returns {Promise}
  */
-const getArraybuffer = url => axios({
+const getArraybuffer = (url) => axios({
   method: 'get',
   url,
   responseType: 'arraybuffer',

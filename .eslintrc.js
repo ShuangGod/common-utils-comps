@@ -2,36 +2,27 @@
  * @Description: eslint 规则
  * @version: V1.0.0
  * @Author: Shuangshuang Song
- * @Date: 2021-03-29 17:27:35
- * @LastEditTime: 2021-07-29 18:51:56
+ * @Date: 2021-08-05 16:17:44
+ * @LastEditTime: 2021-08-05 17:33:19
  * @LastEditors: Shuangshuang Song
  */
 module.exports = {
   root: true,
   env: {
     node: true,
-    browser: true,
-    es6: true
   },
   extends: [
-    "eslint:recommended",
-    "plugin:vue/recommended",
-    "airbnb-base"
+    'plugin:vue/vue3-essential',
+    '@vue/airbnb',
   ],
-  globals: {
-    require: false,
-    Vue: false,
-    __dirname: false,
-    module: false,
-  },
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module',
   },
   rules: {
-    "camelcase": 0,
-    "semi": ["error", "always"],
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    camelcase: 0,
+    semi: ['error', 'always'],
     'import/extensions': ['off'],
     'import/no-duplicates': ['off'],
     'import/no-unresolved': 0,
@@ -52,33 +43,32 @@ module.exports = {
     'guard-for-in': 0,
     'max-len': [2, { code: 200 }],
     'no-unused-expressions': 0,
-    'eqeqeq': 0,
+    eqeqeq: 0,
     'no-multi-assign': 0,
     'prefer-rest-params': 0,
     'consistent-return': 0,
     'default-case': 0,
-    "valid-jsdoc": 0, //禁用jsdoc规则
-    "vue/no-v-html": 0,
-    "global-require": 0,
-    "no-nested-ternary": 0,
-    "linebreak-style": ["off", "windows"],
-    "radix": 0,
-    "prefer-destructuring": 0,
-    "array-callback-return": 0,
-    "func-names": 0,
-    "no-console": 0,
-    "max-len": 0,
-    "no-restricted-properties": 0,
-    "import/no-cycle": 0,
-    "no-shadow": 0,
-    "vue/require-prop-types": 0,
-    "vue/require-default-prop": 0,
-    "new-cap": 0,
-    "prefer-spread": 0,
-    "prefer-promise-reject-errors": 0,
-    "import/no-webpack-loader-syntax": 0,
-    "no-continue": 0,
-    "no-new": 0,
-    "class-methods-use-this": 0
+    'valid-jsdoc': 0, // 禁用jsdoc规则
+    'vue/no-v-html': 0,
+    'global-require': 0,
+    'no-nested-ternary': 0,
+    'linebreak-style': ['off', 'windows'],
+    radix: 0,
+    'prefer-destructuring': 0,
+    'array-callback-return': 0,
+    'func-names': 0,
+    'no-console': 0,
+    'max-len': 0,
+    'no-restricted-properties': 0,
+    'import/no-cycle': 0,
+    'no-shadow': 0,
+    'vue/require-prop-types': 0,
+    'vue/require-default-prop': 0,
+    'new-cap': 0,
+    'prefer-spread': 0,
+    'vue/no-template-shadow': 0,
+    'class-methods-use-this': 0,
+    'no-new': 0,
+    'no-dupe-keys': 0,
   },
 };

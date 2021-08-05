@@ -26,7 +26,7 @@ export function createPoster(dom, opt = {}) {
 
   context.scale(scale, scale);
 
-  const options = Object.assign({
+  const options = {
     dpi: window.devicePixelRatio * scale,
     scale, // 添加的scale 参数
     canvas, // 自定义 canvas
@@ -38,7 +38,8 @@ export function createPoster(dom, opt = {}) {
     y: 0,
     scrollY: 0,
     scrollX: 0,
-  }, opt);
+    ...opt,
+  };
   return new Promise((resolve) => {
     html2canvas(dom, options).then((cvs) => {
       resolve(cvs);

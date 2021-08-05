@@ -426,14 +426,15 @@ export function getBase64Image(img, width, height) {
  */
 export function createQRcode(dom, opt = {}) {
   dom.innerHTML = ''; // 先置空  防止显示多个
-  const options = Object.assign({
+  const options = {
     text: '',
     width: 200,
     height: 200,
     colorDark: '#333333', // 二维码颜色
     colorLight: '#ffffff', // 二维码背景色
     correctLevel: QRCode.CorrectLevel.L, // 容错率，L/M/H
-  }, opt);
+    ...opt,
+  };
   new QRCode(dom, options);
 }
 
