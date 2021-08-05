@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-02 11:16:12
- * @LastEditTime: 2021-08-05 13:17:05
+ * @LastEditTime: 2021-08-05 14:10:28
  * @LastEditors: Shuangshuang Song
  */
 const path = require('path');
@@ -18,8 +18,9 @@ module.exports = {
     path: path.resolve(__dirname, '../lib'),
     filename: 'common.lib.js',
     library: {
-      type: 'commonjs2',
+      type: 'umd',
       export: 'default',
+      umdNamedDefine: true,
     },
   },
   // 插件配置
