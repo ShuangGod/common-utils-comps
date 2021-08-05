@@ -1,6 +1,6 @@
 {
   "name": "common-utils-comps",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "常用的公共类，方法，组件，指令等等~",
   "repository": {
     "type": "git",
@@ -66,7 +66,8 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^3.0.0"
   },
   "husky": {
     "hooks": {
