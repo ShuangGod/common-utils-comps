@@ -1,4 +1,4 @@
-# common-components-lib
+# common-utils-comps
 ### 公共的类、指令、方法和组件(默认仅支持vue3项目)，适用于小作坊内部使用~~~
 
 ## 开发
