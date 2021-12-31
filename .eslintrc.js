@@ -3,17 +3,20 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-05 16:17:44
- * @LastEditTime: 2021-08-05 17:33:19
- * @LastEditors: Shuangshuang Song
+ * @LastEditTime: 2021-12-31 16:39:53
+ * @LastEditors: Song Shuang Shuang
  */
 module.exports = {
   root: true,
   env: {
     node: true,
+    browser: true,
+    es6: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/airbnb',
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "airbnb-base"
   ],
   parserOptions: {
     parser: 'babel-eslint',
@@ -21,8 +24,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    camelcase: 0,
-    semi: ['error', 'always'],
+    'camelcase': 0,
+    'semi': ['error', 'always'],
     'import/extensions': ['off'],
     'import/no-duplicates': ['off'],
     'import/no-unresolved': 0,
@@ -43,7 +46,7 @@ module.exports = {
     'guard-for-in': 0,
     'max-len': [2, { code: 200 }],
     'no-unused-expressions': 0,
-    eqeqeq: 0,
+    'eqeqeq': 0,
     'no-multi-assign': 0,
     'prefer-rest-params': 0,
     'consistent-return': 0,
@@ -53,7 +56,7 @@ module.exports = {
     'global-require': 0,
     'no-nested-ternary': 0,
     'linebreak-style': ['off', 'windows'],
-    radix: 0,
+    'radix': 0,
     'prefer-destructuring': 0,
     'array-callback-return': 0,
     'func-names': 0,

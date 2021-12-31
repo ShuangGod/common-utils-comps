@@ -1,6 +1,11 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Demo></Demo>
+  <div id="common-utils-comps">
+    <img
+      alt="Vue logo"
+      src="./assets/logo.png"
+    >
+    <Demo />
+  </div>
 </template>
 
 <script>
