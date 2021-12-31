@@ -3,8 +3,8 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-05 16:17:44
- * @LastEditTime: 2021-08-05 17:33:19
- * @LastEditors: Shuangshuang Song
+ * @LastEditTime: 2021-12-31 17:05:19
+ * @LastEditors: Song Shuang Shuang
  */
 module.exports = {
   root: true,
@@ -22,7 +22,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     camelcase: 0,
-    semi: ['error', 'always'],
     'import/extensions': ['off'],
     'import/no-duplicates': ['off'],
     'import/no-unresolved': 0,

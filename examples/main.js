@@ -1,5 +1,14 @@
 import { createApp } from 'vue';
-import Demo from '@/Demo/index';
+import ElementPlus from 'element-plus';
+import 'element-plus/dist/index.css';
+// import Vant from 'vant';
+// import 'vant/lib/index.css';
 import App from './App.vue';
+import Demo from '@/Demo';
 
-createApp(App).use(Demo).mount('#app');
+const app = createApp(App);
+
+app.use(ElementPlus);
+// app.use(Vant);
+app.use(Demo);
+app.mount('#app');
