@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import ElementPlus from 'element-plus';
+import 'normalize.css/normalize.css';
 import 'element-plus/dist/index.css';
 // import Vant from 'vant';
 // import 'vant/lib/index.css';
