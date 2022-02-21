@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-05 16:17:44
- * @LastEditTime: 2021-12-31 16:39:53
+ * @LastEditTime: 2022-01-04 10:06:35
  * @LastEditors: Song Shuang Shuang
  */
 module.exports = {
@@ -73,5 +73,6 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-new': 0,
     'no-dupe-keys': 0,
+    'arrow-parens': 0,
   },
 };
