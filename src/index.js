@@ -1,14 +1,14 @@
 /*
- * @Description: 入口
+ * @Description: 打包入口
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-07-29 15:19:09
- * @LastEditTime: 2021-08-05 17:23:26
- * @LastEditors: Shuangshuang Song
+ * @LastEditTime: 2022-02-22 16:57:14
+ * @LastEditors: Song Shuang Shuang
 */
 
-import Demo from '../packages/Demo/index';
-import BackToTop from '../packages/BackToTop/index';
+import BackToTop from 'pack/BackToTop';
+import SnVxeGrid from 'pack/SnVxeGrid';
 import {
   parseTime, formatTime, getQueryObject, byteLength, cleanArray, json2param, param2Json, html2Text, objectMerge,
   toggleClass, getTime, debounce, deepClone, uniqueArr, createUniqueString, hasClass, addClass, removeClass, deleteOneOfArray,
@@ -26,8 +26,8 @@ import Audiojs from './class/audio';
 import Print from './class/print';
 
 const components = [
-  Demo,
   BackToTop,
+  SnVxeGrid,
 ];
 
 const install = (Vue) => {
@@ -100,8 +100,8 @@ const initGlobal = (name) => {
 export default {
   version: '1.0.0',
   install, // 用于Vue.use 全局注册组件
-  Demo, // Demo组件
   BackToTop, // BackToTop组件
+  SnVxeGrid,
   initGlobal, // 注入全局方法
   SSS, // 方法集合
   Audiojs, // 音频类

@@ -3,8 +3,8 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-05 16:22:17
- * @LastEditTime: 2021-08-05 16:27:43
- * @LastEditors: Shuangshuang Song
+ * @LastEditTime: 2022-02-22 15:33:43
+ * @LastEditors: Song Shuang Shuang
  */
 
 const path = require('path');
@@ -34,9 +34,9 @@ module.exports = {
     resolve: {
       extensions: ['.js', '.vue', '.json'],
       alias: {
-        '@': resolve('packages'),
-        assets: resolve('examples/assets'),
-        views: resolve('examples/views'),
+        '@': resolve('src'),
+        pack: resolve('packages'),
+        exam: resolve('examples'),
       },
     },
   },

@@ -3,7 +3,7 @@
  * @version: V1.0.0
  * @Author: Shuangshuang Song
  * @Date: 2021-08-05 16:17:44
- * @LastEditTime: 2022-01-04 10:06:35
+ * @LastEditTime: 2022-02-22 15:02:15
  * @LastEditors: Song Shuang Shuang
  */
 module.exports = {
@@ -22,6 +22,7 @@ module.exports = {
     parser: 'babel-eslint',
   },
   rules: {
+    'no-restricted-globals': 0,
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'camelcase': 0,

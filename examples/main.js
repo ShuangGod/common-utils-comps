@@ -1,17 +1,27 @@
+/*
+* @Description: main
+* @Author: Song Shuang Shuang
+* @Date: 2021-12-31 17:09:21
+ * @LastEditTime: 2022-02-22 14:25:20
+ * @LastEditors: Song Shuang Shuang
+*/
 import Vue from 'vue';
 import ElementUI from 'element-ui';
-import Demo from '@/Demo';
+import Cookies from 'js-cookie';
+import router from './router';
+import store from './store';
 import App from './App.vue';
 
 import 'normalize.css/normalize.css'; // a modern alternative to CSS resets
-import 'element-ui/lib/theme-chalk/index.css';
 
-Vue.use(ElementUI);
-Vue.use(Demo);
+Vue.use(ElementUI, {
+  size: Cookies.get('size') || 'medium', // set element-ui default size
+});
 
 Vue.config.productionTip = false;
 
 new Vue({
-  el: '#app',
-  render: h => h(App),
-});
+  router,
+  store,
+  render: (h) => h(App),
+}).$mount('#app');

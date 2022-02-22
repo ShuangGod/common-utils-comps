@@ -29,7 +29,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.5",
     "file-saver": "^2.0.5",
@@ -37,9 +37,16 @@
     "js-cookie": "^3.0.0",
     "jszip": "^3.7.0",
     "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
     "qrcodejs2": "0.0.2",
+    "query-string": "^6.13.1",
     "vant": "^2.12.25",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.1.0",
+    "vxe-table": "^3.4.15",
+    "xe-utils": "^3.5.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
@@ -48,6 +55,8 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-import": "^1.13.3",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
